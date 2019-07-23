@@ -17,7 +17,7 @@ title: ChloroBlog
 email: myosotis@mail.ustc.edu.cn
 description: >- # this means to ignore newlines until "baseurl:"
   Description? Nani?
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "https://chlorie.github.io/ChloroBlog" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: Hydrochlorie
 github_username:  Chlorie
