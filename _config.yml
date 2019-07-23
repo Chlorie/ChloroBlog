@@ -1,7 +1,7 @@
 title: ChloroBlog
+description: 能鸽善鹉者的领域??????
 email: myosotis@mail.ustc.edu.cn
-description: >- # this means to ignore newlines until "baseurl:"
-  能鸽善鹉者的领域
+copyright: Chlorie
 baseurl: "/ChloroBlog" # the subpath of your site, e.g. /blog
 url: "https://chlorie.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: Hydrochlorie
