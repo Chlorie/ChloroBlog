@@ -14,7 +14,7 @@ date-string: 2019-07-23
 
 另外就是这个theme虽然有些问题，但是它自带跟GitHub类似的那种代码高亮功能，甚至还可以内嵌公式，这样以后要是想写一些偏技术的东西也很方便了，sjuang爆！最后当然就要试一下这些sjuang爆功能了111111
 
-（7月24日更新）评论功能采用了[Gitment](https://github.com/imsun/gitment)，现在可以使用GitHub账户登录并且评论了。评论内容支持全部GitHub issues中的功能。
+（7月24日更新）评论功能采用了[Gitalk](https://github.com/gitalk/gitalk)，现在可以使用GitHub账户登录并且评论了。评论内容支持全部GitHub issues中的功能。
 
 ```cpp
 template <typename T>

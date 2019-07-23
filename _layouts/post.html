@@ -74,19 +74,20 @@
             </div>
         </article>
 
-        <div id="container"></div>
-        <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-        <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+        <div id="gitalk-container"></div>
+        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+        <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
         <script>
-        var gitment = new Gitment({
-            owner: "Chlorie",
+        var gitalk = new Gitalk({
+            clientID: "3082b23aa6843b339e3e",
+            clientSecret: "a256ecf9a5a4cd17eb8944cfbcdf1e7d3b204b7f",
             repo: "https://github.com/Chlorie/ChloroBlog",
-            oauth: {
-                client_id: "e57c409118201d6055e3",
-                client_secret: "2c2395310039f2f8346abba8cb5be9b595eca5c8",
-            },
+            owner: "Chlorie",
+            admin: ["Chlorie"],
+            id: location.pathname,      // Ensure uniqueness and length less than 50
+            distractionFreeMode: false  // Facebook-like distraction free mode
         })
-        gitment.render('container')
+        gitalk.render('gitalk-container')
         </script>
     </div>
 </body>
