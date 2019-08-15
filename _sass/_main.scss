@@ -5,16 +5,16 @@ a {
 	color: $link-color; 
 
 	&:visited { 
-		color: lighten($link-color, 20); 
+		color: darken($link-color, 15); 
 	}
 
 	&:hover { 
-		color: lighten($link-color, 20); 
+		color: rgb(212, 135, 41); 
 	}
 
 	&:focus { 
 		outline: thin dotted; 
-		color: darken($link-color, 20);
+		color: lighten($link-color, 45);
 	}
 
 	&:hover, 
