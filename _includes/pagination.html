@@ -6,7 +6,7 @@
         {% endif %}
     
         {% if paginator.page == 2 %}
-            <a href="/">←NEWER</a>
+            <a href="{{ site.url }}{{ site.baseurl }}/">←NEWER</a>
             {% if paginator.page < paginator.total_pages %}
                 | <a href="{{ site.url }}{{ site.baseurl }}/page{{ paginator.next_page }}/">OLDER→</a>
             {% endif %}
