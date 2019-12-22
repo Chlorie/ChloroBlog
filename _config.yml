@@ -7,7 +7,7 @@ url: "https://chlorie.github.io" # the base hostname & protocol for your site, e
 twitter_username: Hydrochlorie
 github_username: Chlorie
 
-future:      false  # publish future dated posts --  true, false (default)
+future: true
 highlighter: rouge
 markdown:    kramdown
 plugins:
