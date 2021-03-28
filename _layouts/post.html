@@ -74,6 +74,23 @@
             </div>
         </article>
 
+        {%- if site.enable_mermaid -%}
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.9.2/mermaid.min.js"></script>
+        <script type="text/javascript">
+        (function() {
+            mermaid.init({startOnLoad:true}, "pre code.language-mermaid", function() {
+                var codeBlock = document.querySelector('code.language-mermaid');
+                var preBlock = codeBlock.parentNode;
+
+                codeBlock.style.backgroundColor = 'initial';
+                preBlock.style.border = 'none';
+                preBlock.style.textAlign = 'center';
+                preBlock.style.backgroundColor = 'initial';
+            });
+        })()
+        </script>
+        {%- endif -%}
+
         <div id="gitalk-container"></div>
         <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
         <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>

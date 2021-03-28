@@ -25,6 +25,8 @@ permalink: /:categories/:year-:month-:day/:title.html
 # Amount of post to show on home page
 paginate: 5
 
+enable_mermaid: true
+
 #kramdown:
 #  input: GFM
 #  auto_ids: true
