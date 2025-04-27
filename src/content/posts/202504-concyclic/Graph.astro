@@ -1,0 +1,32 @@
+---
+import { Plot, type Shape, renderShapes } from "./shapes";
+import "./styles.css";
+
+const MIN_EXTRA_SPACE = 0.5;
+
+interface Props {
+	extent?: number;
+	cellSize?: number;
+	extra?: number;
+	shapes?: Shape[];
+	caption?: string;
+}
+
+function render(props: Props): string {
+	const shapes = props.shapes ?? [];
+	const extent = props.extent ?? 8;
+	const cellSize = props.cellSize ?? 28;
+	const extraGrid = props.extra ?? MIN_EXTRA_SPACE;
+	const extraSpace = Math.max(props.extra ?? MIN_EXTRA_SPACE, MIN_EXTRA_SPACE);
+	const plot = new Plot(extent, cellSize, extraGrid, extraSpace);
+	return renderShapes(plot, shapes);
+}
+
+const svgContent = render(Astro.props);
+const caption = Astro.props.caption;
+---
+
+<figure style="display: flex; flex-direction: column; align-items: center; margin-block: 1em;">
+	<Fragment set:html={svgContent} />
+	{caption && <figcaption>{caption}</figcaption>}
+</figure>

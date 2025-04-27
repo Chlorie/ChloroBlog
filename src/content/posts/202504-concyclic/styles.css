@@ -1,0 +1,7 @@
+.my-flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    column-gap: 2em;
+}
